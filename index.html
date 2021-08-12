@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>CSS Selector</title>
+            <style>
+                
+                div{
+                    width: 200px;
+                    height: 200px;
+                    background-color: rgb(33, 192, 33);
+                }
+               
+                span#a1{
+                    display: block;
+                    width: 200px;
+                    height: 200px;
+                    background: red;
+                }
+                
+                span.b1{
+                    display: block;
+                    width: 200px;
+                    height: 200px;
+                    background: purple;
+                }
+               
+                a[href="https://oklabs.in"]{
+                    display: block;
+                    width: 200px;
+                    height: 200px;
+                    background: lavender;
+                }
+               
+                *{
+                    border:10px solid rgb(0, 0, 0);
+                }
+                
+                div,span#a1,span.b1,a[href="https://oklabs.in"]{
+                    display: inline-block;
+                }
+                
+                h1::after{
+                    content: url('https://1.bp.blogspot.com/-Cn01291Hy9w/WLuhGT70iBI/AAAAAAAAVBY/4vDEYJKBWOYcBsmCEjhEfZ5m9TSHaaT-gCLcB/s1600/dreamer-emoji.gif');
+                }
+               
+                div#c1:hover{
+                background:pink; 
+                }
+            </style>
+        </head>
+        <body>
+            <div>CSS Element Selector </div>
+            <span id="a1">CSS Id Selector.  #</span>
+            <span class="b1">CSS Class Selector</span>
+            <a href="https://oklabs.in">CSS Attribute Selector </a>
+            <h1>CSS Pesudo Element Selector ::</h1>
+            <div id="c1">CSS Pesudo Class Selector :</div>
+        </body>
+    </html>
